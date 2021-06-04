@@ -1,24 +1,6 @@
 set -e
 ORIG_BASE_DIR=$PWD
 
-# clean environment from previous builds
-# remove possibly unpacked sources
-printf "removing previously unpacked sources...\n"
-find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d \
--exec rm -rf {} \;
-printf "done.\n"
-
-# unpack sources
-printf "unpacking dependency sources...\n"
-find $ORIG_BASE_DIR/deps/sources -type f \
--exec tar xvf {} --directory $PWD/deps/unpacked \; 
-printf "done.\n"
-
-# remove possibly created install directories
-for DESTDIR in eglib_install gmp_install mpfr_install \
-qsopt_install flint_install bzip2_install zlib_install chm_install; \
-do rm -rf $ORIG_BASE_DIR/deps/installations/$DESTDIR; done
-
 # create installation directories
 for DESTDIR in eglib_install gmp_install mpfr_install \
 qsopt_install flint_install bzip2_install zlib_install; \
@@ -31,11 +13,10 @@ printf "$PWD\n"
 ./configure --prefix=$ORIG_BASE_DIR/deps/installations/gmp_install
 make clean
 make
-#make check
+##make check
 make install
 printf "gmp compiled, checked and installed.\n"
 cd $ORIG_BASE_DIR
-
 
 printf "entering mpfr source directory.\n"
 cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "mpfr*")
@@ -43,7 +24,7 @@ printf "$PWD\n"
 ./configure --prefix=$ORIG_BASE_DIR/deps/installations/mpfr_install --with-gmp=$ORIG_BASE_DIR/deps/installations/gmp_install
 make clean
 make
-#make check
+##make check
 make install
 printf "mpfr compiled, checked and installed.\n"
 cd $ORIG_BASE_DIR
@@ -54,7 +35,7 @@ cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "zl
 ./configure --prefix=$ORIG_BASE_DIR/deps/installations/zlib_install
 make clean
 make
-#make check
+##make check
 make install
 printf "zlib compiled, checked and installed.\n"
 cd $ORIG_BASE_DIR
@@ -66,7 +47,7 @@ cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "bz
 make clean
 make -f Makefile-libbz2_so
 make
-#make check
+##make check
 make install PREFIX=$ORIG_BASE_DIR/deps/installations/bzip2_install
 cp libbz2.so.1.0.6 $ORIG_BASE_DIR/deps/installations/bzip2_install/lib/
 cp bzlib_private.h $ORIG_BASE_DIR/deps/installations/bzip2_install/include/
@@ -92,18 +73,18 @@ export C_INCLUDE_PATH=$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$O
 LDFLAGS="-L$ORIG_BASE_DIR/deps/installations/gmp_install/lib -L$ORIG_BASE_DIR/deps/installations/zlib_install/lib -L$ORIG_BASE_DIR/deps/installations/bzip2_install/lib" \
 CPPFLAGS="-I$ORIG_BASE_DIR/deps/installations/bzip2_install/include -I$ORIG_BASE_DIR/deps/installations/zlib_install/include -I$ORIG_BASE_DIR/deps/installations/gmp_install/include"
 make clean
-#make check
+##make check
 make install
 printf "qsopt-ex compiled, checked and installed.\n"
 cd $ORIG_BASE_DIR
 
 # flint installation
 printf "entering flint source directory.\n"
-# hardcoding, as there is flint-2.7.0 for debian-10 in this directory
+# hardcoding, as there is flint-2.7.0 for debian-10 in this repository too
 cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "flint-2.5.2")
 ./configure --prefix=$ORIG_BASE_DIR/deps/installations/flint_install --with-gmp=$ORIG_BASE_DIR/deps/installations/gmp_install --with-mpfr=$ORIG_BASE_DIR/deps/installations/mpfr_install
 make
-#make check
+##make check
 make install
 printf "flint compiled, checked and installed.\n"
 cd $ORIG_BASE_DIR
@@ -136,6 +117,7 @@ export LD_LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_B
 export LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/qsopt_install/lib:$ORIG_BASE_DIR/deps/installations/flint_install/lib:$ORIG_BASE_DIR/deps/installations/eglib_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:$ORIG_BASE_DIR/deps/installations/mpfr_install/lib:
 export C_INCLUDE_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/qsopt_install/include/qsopt_ex:$ORIG_BASE_DIR/deps/installations/flint_install/include/flint:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/mpfr_install/include:
 EOF
+
 cat > $ORIG_BASE_DIR/chm.bash << 'EOF'
 source library_loader
 $ORIG_BASE_DIR/deps/installations/chm_install/chm "$@"
