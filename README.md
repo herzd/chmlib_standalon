@@ -1,2 +1,2 @@
 # chmlib_standalone
-development of chmlib installers for various operating systems 
+development of unpriviledged-user chmlib standalone installers for various operating systems. 
