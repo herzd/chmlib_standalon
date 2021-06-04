@@ -94,6 +94,7 @@ cd $ORIG_BASE_DIR
 printf "entering eglib source directory.\n"
 cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "EGlib*")
 ./configure --prefix=$ORIG_BASE_DIR/deps/installations/eglib_install LDFLAGS="-L/$ORIG_BASE_DIR/deps/installations/gmp_install/lib" --with-gmp=$ORIG_BASE_DIR/deps/installations/gmp_install --with-gmp-lib-dir=$ORIG_BASE_DIR/deps/installations/gmp_install/lib --with-gmp-include-dir=$ORIG_BASE_DIR/deps/installations/gmp_install/include
+mkdir include lib
 make clean
 make SVNVERSION=""
 cp -r include $ORIG_BASE_DIR/deps/installations/eglib_install/
