@@ -58,6 +58,7 @@ cd $ORIG_BASE_DIR
 printf "entering qsopt-ex source directory.\n"
 cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "qsopt*")
 # create build directory, delete potentially old one
+./bootstrap
 if [ ! -d build ]
 then
     mkdir build && cd build
