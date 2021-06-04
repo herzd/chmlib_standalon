@@ -1,0 +1,33 @@
+MINIMUM NECESARY SOFTWARE
+	- GCC > 3.4.6
+
+FULL COMPILATION REQUIREMENTS (GENERATE TEMPLATE FILES)
+	- Exuberant Ctags 5.6 or later
+	- GNU Awk 3.1.6.
+	- autoconf
+	- autoheader
+	- gmp 4.3.x or 5.0.x
+
+FULL COMPILATION INSTRUCTIONS
+	autoheader  /* to generate config.h.in */
+	autoconf		/* to generate configure script */
+	./configure --disable-reuse-dep  /* if doing full compilation, this step ensure the building of template files and dependencies */
+	make
+
+MAIN OPTIONS
+	see ./configure --help
+
+ADITIONAL LIBRARIES
+	Starting in 2.6.8 EGlib i/o support using plain files, gz-compresed
+	files and bz2-compresed files within an unified framework, to be able
+	to use these features you should have bzip2 and zlib available in your 
+	system, INCLUDING THE DEVELOPMENT PACKAGES. If not (or if they are
+	installed in unusual paths) edit make.conf before compiling.
+	In any case, configure should detect the libraries
+
+INSTALED FILES
+	- Library is included in lib/libEGlib.so lib/libEGlib.a
+	  (availability depend on the actual system)
+	- Include file is in include/EGlib.h
+	- Example files in bin/
+

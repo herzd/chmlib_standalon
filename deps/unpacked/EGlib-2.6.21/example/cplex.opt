@@ -1,0 +1,72 @@
+# Example CPLEX option
+TYPE: OPTIONFILE
+SCRIND: ON
+MIPDISPLAY: 4
+MIPINTERVAL: 200
+# 0 for balanced (default), 
+# 1 for feasibility, 
+# 2 for optimality, 
+# 3 for best bound, 
+# 4 for hidden feasibility
+MIPEMPHASIS: 0 
+# probe agressiveness:
+# 	-1 disable
+# 	0 automatic
+# 	1-4 different aggresivness levels
+PROBE: 0
+#options are: 0 automatic
+#							1 maxinfeas (most fractionary)
+#							2 pseudocost
+#							3 strong
+#							4 pseudoreduced */
+VARSEL: 0
+# control number of B&B nodes to process, if zero, only the root node is explored
+# NODELIM: 2000000000
+THREADS: 1
+MIPCBREDLP: OFF
+PREIND: OFF
+# integer tolerance i.e. if (x-floor(x) < EPINT) x is considered 
+# to be integer
+EPINT: 1e-6
+# We set the time limit to 20 hrs
+TILIM: 14400
+EPGAP: 0.00001
+CUTSFACTOR: 10.0
+# CUTTING PLANE METHODS TO USE
+# In general CPLEX has four options:
+# -1 Do not use
+#  0 Automatic
+#  1 Moderate effort
+#  2 Aggresive effort
+#  3 Very aggresive effort
+ZEROHALFCUTS 0
+FRACCUTS 0
+FLOWCOVERS 0
+FLOWPATHS 0
+MIRCUTS 0
+DISJCUTS 0
+CLIQUES 0
+COVERS 0
+IMPLBD 0
+GUBCOVERS 0
+MCFCUTS 0
+# enable or dissable local branching heuristic
+# frecuency on rins heuristic calls
+# -1 for disabling
+#  0 for automatic
+#  >1 for a given frequency (in nodes)
+RINSHEUR 0
+# frecuency on periodic heuristic calls
+# -1 for disabling
+#  0 for automatic
+#  >1 for a given frequency (in nodes)
+HEURFREQ 0
+# enable or dissable local branching heuristic
+LBHEUR ON
+# Other possible options include:
+# CUTUP
+# CUTLO
+# STARTALG (PRIMAL DUAL BARRIER)
+# SUBALG (PRIMAL DUAL BARRIER)
+STARTALG BARRIER
+EOF

@@ -1,0 +1,658 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* first argument type for accept */
+#ifndef ACCEPT_TYPE_ARG1
+#undef ACCEPT_TYPE_ARG1
+#endif
+
+
+/* second argument type for accept */
+#ifndef ACCEPT_TYPE_ARG2
+#undef ACCEPT_TYPE_ARG2
+#endif
+
+/* third argument type for accept */
+#ifndef ACCEPT_TYPE_ARG3
+#undef ACCEPT_TYPE_ARG3
+#endif
+
+/* Compilation-time debug level */
+#ifndef DEBUG
+#undef DEBUG
+#endif
+
+/* Define to 1 if want to use slab-based memory pool for gmp numbers */
+#ifndef EG_LPNUM_MEMSLAB
+#undef EG_LPNUM_MEMSLAB
+#endif
+
+/* Define to one if yiu want long double support (if present in the system) */
+#ifndef ENABLE_LONG_DOUBLE
+#undef ENABLE_LONG_DOUBLE
+#endif
+
+/* Define to 1 if you have the <assert.h> header file. */
+#ifndef HAVE_ASSERT_H
+#undef HAVE_ASSERT_H
+#endif
+
+/* Define to 1 if the system has the type `BZFILE*'. */
+#ifndef HAVE_BZFILEP
+#undef HAVE_BZFILEP
+#endif
+
+/* Define to 1 if you have the <bzlib.h> header file. */
+#ifndef HAVE_BZLIB_H
+#undef HAVE_BZLIB_H
+#endif
+
+/* Define to 1 if you have the `clock' function. */
+#ifndef HAVE_CLOCK
+#undef HAVE_CLOCK
+#endif
+
+/* Define to 1 if you have the declaration of `BZ2_bzclose', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_BZ2_BZCLOSE
+#undef HAVE_DECL_BZ2_BZCLOSE
+#endif
+
+/* Define to 1 if you have the declaration of `BZ2_bzerror', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_BZ2_BZERROR
+#undef HAVE_DECL_BZ2_BZERROR
+#endif
+
+/* Define to 1 if you have the declaration of `BZ2_bzopen', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_BZ2_BZOPEN
+#undef HAVE_DECL_BZ2_BZOPEN
+#endif
+
+/* Define to 1 if you have the declaration of `BZ2_bzread', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_BZ2_BZREAD
+#undef HAVE_DECL_BZ2_BZREAD
+#endif
+
+/* Define to 1 if you have the declaration of `BZ2_bzwrite', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_BZ2_BZWRITE
+#undef HAVE_DECL_BZ2_BZWRITE
+#endif
+
+/* Define to 1 if you have the declaration of `gzclose', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_GZCLOSE
+#undef HAVE_DECL_GZCLOSE
+#endif
+
+/* Define to 1 if you have the declaration of `gzeof', and to 0 if you don't.
+   */
+#ifndef HAVE_DECL_GZEOF
+#undef HAVE_DECL_GZEOF
+#endif
+
+/* Define to 1 if you have the declaration of `gzerror', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_GZERROR
+#undef HAVE_DECL_GZERROR
+#endif
+
+/* Define to 1 if you have the declaration of `gzgets', and to 0 if you don't.
+   */
+#ifndef HAVE_DECL_GZGETS
+#undef HAVE_DECL_GZGETS
+#endif
+
+/* Define to 1 if you have the declaration of `gzopen', and to 0 if you don't.
+   */
+#ifndef HAVE_DECL_GZOPEN
+#undef HAVE_DECL_GZOPEN
+#endif
+
+/* Define to 1 if you have the declaration of `gzwrite', and to 0 if you
+   don't. */
+#ifndef HAVE_DECL_GZWRITE
+#undef HAVE_DECL_GZWRITE
+#endif
+
+/* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
+#ifndef HAVE_DOPRNT
+#undef HAVE_DOPRNT
+#endif
+
+/* Define to 1 if you have the <errno.h> header file. */
+#ifndef HAVE_ERRNO_H
+#undef HAVE_ERRNO_H
+#endif
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#ifndef HAVE_FCNTL_H
+#undef HAVE_FCNTL_H
+#endif
+
+/* Define to 1 if you have the <float.h> header file. */
+#ifndef HAVE_FLOAT_H
+#undef HAVE_FLOAT_H
+#endif
+
+/* Define to 1 if you have the `floor' function. */
+#ifndef HAVE_FLOOR
+#undef HAVE_FLOOR
+#endif
+
+/* Define to 1 if you have the `gethostbyname' function. */
+#ifndef HAVE_GETHOSTBYNAME
+#undef HAVE_GETHOSTBYNAME
+#endif
+
+/* Define to 1 if you have the `getrusage' function. */
+#ifndef HAVE_GETRUSAGE
+#undef HAVE_GETRUSAGE
+#endif
+
+/* Define to 1 if you have the <gmp.h> header file. */
+#ifndef HAVE_GMP_H
+#undef HAVE_GMP_H
+#endif
+
+/* Define to 1 if the system has the type `gzFile'. */
+#ifndef HAVE_GZFILE
+#undef HAVE_GZFILE
+#endif
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#ifndef HAVE_INTTYPES_H
+#undef HAVE_INTTYPES_H
+#endif
+
+/* Define to 1 if you have the `bz2' library (-lbz2). */
+#ifndef HAVE_LIBBZ2
+#undef HAVE_LIBBZ2
+#endif
+
+/* Define if you have libgmp */
+#ifndef HAVE_LIBGMP
+#undef HAVE_LIBGMP
+#endif
+
+/* Define to 1 if you have the `m' library (-lm). */
+#ifndef HAVE_LIBM
+#undef HAVE_LIBM
+#endif
+
+/* Define to 1 if you have the `nsl' library (-lnsl). */
+#ifndef HAVE_LIBNSL
+#undef HAVE_LIBNSL
+#endif
+
+/* Define to 1 if you have the `pthread' library (-lpthread). */
+#ifndef HAVE_LIBPTHREAD
+#undef HAVE_LIBPTHREAD
+#endif
+
+/* Define to 1 if you have the `resolv' library (-lresolv). */
+#ifndef HAVE_LIBRESOLV
+#undef HAVE_LIBRESOLV
+#endif
+
+/* Define to 1 if you have the `z' library (-lz). */
+#ifndef HAVE_LIBZ
+#undef HAVE_LIBZ
+#endif
+
+/* Define to 1 if you have the `cplex' library (-lcplex). */
+#ifndef HAVE_LIBCPLEX
+#undef HAVE_LIBCPLEX
+#endif
+
+/* Define to 1 if you have the <limits.h> header file. */
+#ifndef HAVE_LIMITS_H
+#undef HAVE_LIMITS_H
+#endif
+
+/* Define to 1 if the system has the type `long double'. */
+#ifndef HAVE_LONG_DOUBLE
+#undef HAVE_LONG_DOUBLE
+#endif
+
+/* Define to 1 if your system has a GNU libc compatible `malloc' function, and
+   to 0 otherwise. */
+#ifndef HAVE_MALLOC
+#undef HAVE_MALLOC
+#endif
+
+/* Define to 1 if you have the <malloc.h> header file. */
+#ifndef HAVE_MALLOC_H
+#undef HAVE_MALLOC_H
+#endif
+
+/* Define to 1 if you have the <math.h> header file. */
+#ifndef HAVE_MATH_H
+#undef HAVE_MATH_H
+#endif
+
+/* Define to 1 if you have the <memory.h> header file. */
+#ifndef HAVE_MEMORY_H
+#undef HAVE_MEMORY_H
+#endif
+
+/* Define to 1 if you have the `memset' function. */
+#ifndef HAVE_MEMSET
+#undef HAVE_MEMSET
+#endif
+
+/* Define to 1 if you have the <netdb.h> header file. */
+#ifndef HAVE_NETDB_H
+#undef HAVE_NETDB_H
+#endif
+
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#ifndef HAVE_NETINET_IN_H
+#undef HAVE_NETINET_IN_H
+#endif
+
+/* Define to 1 if you have the `posix_memalign' function. */
+#ifndef HAVE_POSIX_MEMALIGN
+#undef HAVE_POSIX_MEMALIGN
+#endif
+
+/* Define to 1 if you have the `pow' function. */
+#ifndef HAVE_POW
+#undef HAVE_POW
+#endif
+
+/* Define to 1 if your system has a GNU libc compatible `realloc' function,
+   and to 0 otherwise. */
+#ifndef HAVE_REALLOC
+#undef HAVE_REALLOC
+#endif
+
+/* Define to 1 if you have the <setjmp.h> header file. */
+#ifndef HAVE_SETJMP_H
+#undef HAVE_SETJMP_H
+#endif
+
+/* Define to 1 if you have the `sigaction' function. */
+#ifndef HAVE_SIGACTION
+#undef HAVE_SIGACTION
+#endif
+
+/* Define to 1 if you have the `signal' function. */
+#ifndef HAVE_SIGNAL
+#undef HAVE_SIGNAL
+#endif
+
+/* Define to 1 if you have the <signal.h> header file. */
+#ifndef HAVE_SIGNAL_H
+#undef HAVE_SIGNAL_H
+#endif
+
+/* Define to 1 if you have the `sleep' function. */
+#ifndef HAVE_SLEEP
+#undef HAVE_SLEEP
+#endif
+
+/* Define to 1 if you have the `socket' function. */
+#ifndef HAVE_SOCKET
+#undef HAVE_SOCKET
+#endif
+
+/* Define to one if you want software-based 128-bit floating point numbers */
+#ifndef HAVE_SOFTFLOAT
+#undef HAVE_SOFTFLOAT
+#endif
+
+/* Define to 1 if you have the `sqrt' function. */
+#ifndef HAVE_SQRT
+#undef HAVE_SQRT
+#endif
+
+/* Define to 1 if you have the <stdarg.h> header file. */
+#ifndef HAVE_STDARG_H
+#undef HAVE_STDARG_H
+#endif
+
+/* Define to 1 if you have the <stddef.h> header file. */
+#ifndef HAVE_STDDEF_H
+#undef HAVE_STDDEF_H
+#endif
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#ifndef HAVE_STDINT_H
+#undef HAVE_STDINT_H
+#endif
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#ifndef HAVE_STDIO_H
+#undef HAVE_STDIO_H
+#endif
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#ifndef HAVE_STDLIB_H
+#undef HAVE_STDLIB_H
+#endif
+
+/* Define to 1 if you have the `strdup' function. */
+#ifndef HAVE_STRDUP
+#undef HAVE_STRDUP
+#endif
+
+/* Define to 1 if you have the `strerror' function. */
+#ifndef HAVE_STRERROR
+#undef HAVE_STRERROR
+#endif
+
+/* Define to 1 if you have the <strings.h> header file. */
+#ifndef HAVE_STRINGS_H
+#undef HAVE_STRINGS_H
+#endif
+
+/* Define to 1 if you have the <string.h> header file. */
+#ifndef HAVE_STRING_H
+#undef HAVE_STRING_H
+#endif
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#ifndef HAVE_SYS_PARAM_H
+#undef HAVE_SYS_PARAM_H
+#endif
+
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#ifndef HAVE_SYS_RESOURCE_H
+#undef HAVE_SYS_RESOURCE_H
+#endif
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#ifndef HAVE_SYS_SOCKET_H
+#undef HAVE_SYS_SOCKET_H
+#endif
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#ifndef HAVE_SYS_STAT_H
+#undef HAVE_SYS_STAT_H
+#endif
+
+/* Define to 1 if you have the <sys/times.h> header file. */
+#ifndef HAVE_SYS_TIMES_H
+#undef HAVE_SYS_TIMES_H
+#endif
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#ifndef HAVE_SYS_TIME_H
+#undef HAVE_SYS_TIME_H
+#endif
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#ifndef HAVE_SYS_TYPES_H
+#undef HAVE_SYS_TYPES_H
+#endif
+
+/* Define to 1 if you have the <sys/utsname.h> header file. */
+#ifndef HAVE_SYS_UTSNAME_H
+#undef HAVE_SYS_UTSNAME_H
+#endif
+
+/* Define to 1 if you have the `times' function. */
+#ifndef HAVE_TIMES
+#undef HAVE_TIMES
+#endif
+
+/* Define to 1 if you have the <time.h> header file. */
+#ifndef HAVE_TIME_H
+#undef HAVE_TIME_H
+#endif
+
+/* Define to 1 if you have <pthread.h> header file */ 
+#ifndef HAVE_PTHREAD_H
+#undef HAVE_PTHREAD_H
+#endif
+
+/* Define to 1 if typeof works with your compiler. */
+#ifndef HAVE_TYPEOF
+#undef HAVE_TYPEOF
+#endif
+
+/* Define to 1 if you have the `uname' function. */
+#ifndef HAVE_UNAME
+#undef HAVE_UNAME
+#endif
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#ifndef HAVE_UNISTD_H
+#undef HAVE_UNISTD_H
+#endif
+
+/* Define to 1 if you have the `vprintf' function. */
+#ifndef HAVE_VPRINTF
+#undef HAVE_VPRINTF
+#endif
+
+/* Define to 1 if you have the <zlib.h> header file. */
+#ifndef HAVE_ZLIB_H
+#undef HAVE_ZLIB_H
+#endif
+
+/* Define to 1 if you have the <cplex.h> header file. */
+#ifndef HAVE_CPLEX_H
+#undef HAVE_CPLEX_H
+#endif
+
+/* Define to the address where bug reports for this package should be sent. */
+#ifndef PACKAGE_BUGREPORT
+#undef PACKAGE_BUGREPORT
+#endif
+
+/* Define to the full name of this package. */
+#ifndef PACKAGE_NAME
+#undef PACKAGE_NAME
+#endif
+
+/* Define to the full name and version of this package. */
+#ifndef PACKAGE_STRING
+#undef PACKAGE_STRING
+#endif
+
+/* Define to the one symbol short name of this package. */
+#ifndef PACKAGE_TARNAME
+#undef PACKAGE_TARNAME
+#endif
+
+/* Define to the version of this package. */
+#ifndef PACKAGE_VERSION
+#undef PACKAGE_VERSION
+#endif
+
+/* Define as the return type of signal handlers (`int' or `void'). */
+#ifndef RETSIGTYPE
+#undef RETSIGTYPE
+#endif
+
+/* Define to 1 if you have the ANSI C header files. */
+#ifndef STDC_HEADERS
+#undef STDC_HEADERS
+#endif
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#ifndef TIME_WITH_SYS_TIME
+#undef TIME_WITH_SYS_TIME
+#endif
+
+/* Compilation-time verbose level */
+#ifndef VERBOSE_LEVEL
+#undef VERBOSE_LEVEL
+#endif
+
+/* Define to 1 if on AIX 3.
+   System headers sometimes define this.
+   We just want to avoid a redefinition error message.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
+
+/* Define to 1 if on MINIX. */
+#ifndef _MINIX
+#undef _MINIX
+#endif
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#ifndef _POSIX_1_SOURCE
+#undef _POSIX_1_SOURCE
+#endif
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#ifndef _POSIX_SOURCE
+#undef _POSIX_SOURCE
+#endif
+
+/* Define for Solaris 2.5.1 so the uint32_t typedef from <sys/synch.h>,
+   <pthread.h>, or <semaphore.h> is not used. If the typedef was allowed, the
+   #define below would cause a syntax error. */
+#ifndef _UINT32_T
+#undef _UINT32_T
+#endif
+
+/* Define for Solaris 2.5.1 so the uint64_t typedef from <sys/synch.h>,
+   <pthread.h>, or <semaphore.h> is not used. If the typedef was allowed, the
+   #define below would cause a syntax error. */
+#ifndef _UINT64_T
+#undef _UINT64_T
+#endif
+
+/* Define for Solaris 2.5.1 so the uint8_t typedef from <sys/synch.h>,
+   <pthread.h>, or <semaphore.h> is not used. If the typedef was allowed, the
+   #define below would cause a syntax error. */
+#ifndef _UINT8_T
+#undef _UINT8_T
+#endif
+
+/* Required for correct definition of functions like exp2 */
+#ifndef _XOPEN_SOURCE
+#undef _XOPEN_SOURCE
+#endif
+
+/* Define to 1 if want to check free of zero and small pointers */
+#ifndef __EG_MEM_FREE_CHECK__
+#undef __EG_MEM_FREE_CHECK__
+#endif
+
+/* Enable extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#ifndef const
+#undef const
+#endif
+
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#ifndef inline
+#undef inline
+#endif
+#endif
+
+/* Define to the type of a signed integer type of width exactly 16 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef int16_t
+#undef int16_t
+#endif
+
+/* Define to the type of a signed integer type of width exactly 32 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef int32_t
+#undef int32_t
+#endif
+
+/* Define to the type of a signed integer type of width exactly 64 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef int64_t
+#undef int64_t
+#endif
+
+/* Define to the type of a signed integer type of width exactly 8 bits if such
+   a type exists and the standard includes do not define it. */
+#ifndef int8_t
+#undef int8_t
+#endif
+
+/* Define to rpl_malloc if the replacement function should be used. */
+#ifndef malloc
+#undef malloc
+#endif
+
+/* Define to `int' if <sys/types.h> does not define. */
+#ifndef pid_t
+#undef pid_t
+#endif
+
+/* Define to rpl_realloc if the replacement function should be used. */
+#ifndef realloc
+#undef realloc
+#endif
+
+/* Define to equivalent of C99 restrict keyword, or to nothing if this is not
+   supported. Do not define if restrict is supported directly. */
+#ifndef restrict
+#undef restrict
+#endif
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#ifndef size_t
+#undef size_t
+#endif
+
+/* Define to `int' if <sys/types.h> does not define. */
+#ifndef ssize_t
+#undef ssize_t
+#endif
+
+/* Define to __typeof__ if your compiler spells it that way. */
+#ifndef typeof
+#undef typeof
+#endif
+
+/* Define to the type of an unsigned integer type of width exactly 16 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef uint16_t
+#undef uint16_t
+#endif
+
+/* Define to the type of an unsigned integer type of width exactly 32 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef uint32_t
+#undef uint32_t
+#endif
+
+/* Define to the type of an unsigned integer type of width exactly 64 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef uint64_t
+#undef uint64_t
+#endif
+
+/* Define to the type of an unsigned integer type of width exactly 8 bits if
+   such a type exists and the standard includes do not define it. */
+#ifndef uint8_t
+#undef uint8_t
+#endif
+
+/* Define to empty if the keyword `volatile' does not work. Warning: valid
+   code using `volatile' can become incorrect without. Disable with care. */
+#ifndef volatile
+#undef volatile
+#endif

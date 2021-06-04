@@ -1,0 +1,17 @@
+EGIDXLPRINT
+EGLMAXSZ
+EG_IDXLIST_DEBUG
+EGidxLstAddAfter
+EGidxLstAddBefore
+EGidxLstDel
+EGidxLstInit
+EGidxLstMoveAfter
+EGidxLstMoveBefore
+EGidxLstNull
+EGidxLstReplace
+EGidxLstSplice
+EGidxLst_t
+__EG_IDXLIST_H__
+__EGidxLstAdd
+__EGidxLstLink
+integer_list_t

@@ -1,0 +1,59 @@
+% Lineas que comienzan con '%' son comentarios y deben ser ignoradas,
+% el numero de lineas con comentario es indefinido.
+%
+% El primer numero es el numero de nodos n (suma de generadores y modulos), 
+% el segundo el numero de arcos m (conecciones entre los diferentes nodos)
+13 18
+% Luego viene la description de los nodos (n lineas)
+% El formato de las siguientes n lineas es el siguiente:
+% C1 C2 N1 N2
+% donde C1 indica el tipo de nodo, G para generador, o un entero que indica 
+% que el node es un modulo con C1 servidores paralelos identicos, o T que 
+% indica el nodo de salida del sistema.
+% Si el nodo es de tipo T, no esta acompanado por una distribuicion.
+% C2 indica el tipo de distribucion relacionada con el nodo, U para uniforme, 
+% E para exponencial y N para normal.
+% si C2 es U, entonces N1 y N2 son las cotas superior e inferior del intervalo 
+% de la distribuicion uniforme a usar.
+% si C2 es N, entonces N1 y N2 son la media y la desviacion estandard que 
+% describen la distribuicion normal a usar.
+% Finalmente, si C2 es E, entonces N1 es el parametro de la distribuicion, y 
+% no hay un campo N2.
+G P example/vrp_data2.txt 
+43 U 1 10
+22 U 0 11
+42 U 2 9
+11 U 3 8
+32 U 4 7
+21 N 5.5 0.1
+6 N 5.5 1
+22 N 5.5 2
+28 N 5.5 3
+13 N 5.5 4
+45 N 5.5 5
+T 
+% Luego de las n lineas describiendo los nodos, pasamos a la descripcion de los
+% m arcos o conecciones, cada arco esta determinado por tres numeros, N1 N2 p, donde
+% N1 es la cola del arco, N2 es la cabeza del arco, y p la probabilidad que un 
+% elemento  saliendo de N1 entre al nodo N2. Nos nodos van numerados de 1 ,... ,n 
+% segun el orden que aparecieron en el archivo.
+1 2 1.0
+2 3 0.5
+2 4 0.5
+3 5 0.5
+3 6 0.5
+4 6 0.5
+4 7 0.5
+5 8 0.5
+5 9 0.5
+6 9 0.5
+6 10 0.5
+7 10 0.5
+7 11 0.5
+8 2 1.0
+9 4 1.0
+10 12 1.0
+11 12 1.0
+12 13 1.0
+% El lector de archivos deberia terminar de leer despues de obtener su ultimo arco
+% asi que cualquier texto despues de la linea ``12 13 1.0'' deberia ser ignorada

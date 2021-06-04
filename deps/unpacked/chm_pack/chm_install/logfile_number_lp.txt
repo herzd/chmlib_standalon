@@ -1,0 +1,371 @@
+Using EG-GMP mempool
+
+Removing input redundancies...: 257 X 67 input matrixChecking row 7Checking row 8Checking row 9Checking row 10Checking row 11Checking row 12Checking row 13
+13 REDUNDANT!!
+Checking row 14Checking row 15Checking row 16Checking row 17
+17 REDUNDANT!!
+Checking row 18Checking row 19
+19 REDUNDANT!!
+Checking row 20Checking row 21
+21 REDUNDANT!!
+Checking row 22
+22 REDUNDANT!!
+Checking row 23
+23 REDUNDANT!!
+Checking row 24
+24 REDUNDANT!!
+Checking row 25Checking row 26
+26 REDUNDANT!!
+Checking row 27
+27 REDUNDANT!!
+Checking row 28
+28 REDUNDANT!!
+Checking row 29
+29 REDUNDANT!!
+Checking row 30
+30 REDUNDANT!!
+Checking row 31Checking row 32Checking row 33Checking row 34
+34 REDUNDANT!!
+Checking row 35
+35 REDUNDANT!!
+Checking row 36Checking row 37
+37 REDUNDANT!!
+Checking row 38
+38 REDUNDANT!!
+Checking row 39
+39 REDUNDANT!!
+Checking row 40Checking row 41
+41 REDUNDANT!!
+Checking row 42Checking row 43
+43 REDUNDANT!!
+Checking row 44Checking row 45
+45 REDUNDANT!!
+Checking row 46
+46 REDUNDANT!!
+Checking row 47Checking row 48
+48 REDUNDANT!!
+Checking row 49
+49 REDUNDANT!!
+Checking row 50
+50 REDUNDANT!!
+Checking row 51
+51 REDUNDANT!!
+Checking row 52
+52 REDUNDANT!!
+Checking row 53
+53 REDUNDANT!!
+Checking row 54
+54 REDUNDANT!!
+Checking row 55
+55 REDUNDANT!!
+Checking row 56
+56 REDUNDANT!!
+Checking row 57
+57 REDUNDANT!!
+Checking row 58
+58 REDUNDANT!!
+Checking row 59
+59 REDUNDANT!!
+Checking row 60
+60 REDUNDANT!!
+Checking row 61
+61 REDUNDANT!!
+Checking row 62
+62 REDUNDANT!!
+Checking row 63Checking row 64
+64 REDUNDANT!!
+Checking row 65
+65 REDUNDANT!!
+Checking row 66
+66 REDUNDANT!!
+Checking row 67
+67 REDUNDANT!!
+Checking row 68
+68 REDUNDANT!!
+Checking row 69
+69 REDUNDANT!!
+Checking row 70
+70 REDUNDANT!!
+Checking row 71Checking row 72Checking row 73
+73 REDUNDANT!!
+Checking row 74Checking row 75
+75 REDUNDANT!!
+Checking row 76
+76 REDUNDANT!!
+Checking row 77
+77 REDUNDANT!!
+Checking row 78
+78 REDUNDANT!!
+Checking row 79Checking row 80
+80 REDUNDANT!!
+Checking row 81
+81 REDUNDANT!!
+Checking row 82
+82 REDUNDANT!!
+Checking row 83
+83 REDUNDANT!!
+Checking row 84Checking row 85
+85 REDUNDANT!!
+Checking row 86Checking row 87
+87 REDUNDANT!!
+Checking row 88
+88 REDUNDANT!!
+Checking row 89
+89 REDUNDANT!!
+Checking row 90
+90 REDUNDANT!!
+Checking row 91Checking row 92
+92 REDUNDANT!!
+Checking row 93
+93 REDUNDANT!!
+Checking row 94
+94 REDUNDANT!!
+Checking row 95Checking row 96Checking row 97Checking row 98Checking row 99
+99 REDUNDANT!!
+Checking row 100
+100 REDUNDANT!!
+Checking row 101
+101 REDUNDANT!!
+Checking row 102
+102 REDUNDANT!!
+Checking row 103Checking row 104Checking row 105Checking row 106Checking row 107
+107 REDUNDANT!!
+Checking row 108Checking row 109
+109 REDUNDANT!!
+Checking row 110
+110 REDUNDANT!!
+Checking row 111Checking row 112
+112 REDUNDANT!!
+Checking row 113
+113 REDUNDANT!!
+Checking row 114Checking row 115
+115 REDUNDANT!!
+Checking row 116
+116 REDUNDANT!!
+Checking row 117
+117 REDUNDANT!!
+Checking row 118Checking row 119Checking row 120Checking row 121
+121 REDUNDANT!!
+Checking row 122Checking row 123
+123 REDUNDANT!!
+Checking row 124
+124 REDUNDANT!!
+Checking row 125
+125 REDUNDANT!!
+Checking row 126
+126 REDUNDANT!!
+Checking row 127Checking row 128
+128 REDUNDANT!!
+Checking row 129
+129 REDUNDANT!!
+Checking row 130
+130 REDUNDANT!!
+Checking row 131
+131 REDUNDANT!!
+Checking row 132
+132 REDUNDANT!!
+Checking row 133
+133 REDUNDANT!!
+Checking row 134
+134 REDUNDANT!!
+Checking row 135
+135 REDUNDANT!!
+Checking row 136
+136 REDUNDANT!!
+Checking row 137
+137 REDUNDANT!!
+Checking row 138
+138 REDUNDANT!!
+Checking row 139
+139 REDUNDANT!!
+Checking row 140
+140 REDUNDANT!!
+Checking row 141
+141 REDUNDANT!!
+Checking row 142
+142 REDUNDANT!!
+Checking row 143Checking row 144
+144 REDUNDANT!!
+Checking row 145
+145 REDUNDANT!!
+Checking row 146
+146 REDUNDANT!!
+Checking row 147Checking row 148Checking row 149Checking row 150
+150 REDUNDANT!!
+Checking row 151Checking row 152
+152 REDUNDANT!!
+Checking row 153
+153 REDUNDANT!!
+Checking row 154
+154 REDUNDANT!!
+Checking row 155Checking row 156
+156 REDUNDANT!!
+Checking row 157
+157 REDUNDANT!!
+Checking row 158
+158 REDUNDANT!!
+Checking row 159Checking row 160
+160 REDUNDANT!!
+Checking row 161Checking row 162
+162 REDUNDANT!!
+Checking row 163Checking row 164
+164 REDUNDANT!!
+Checking row 165Checking row 166
+166 REDUNDANT!!
+Checking row 167Checking row 168Checking row 169Checking row 170
+170 REDUNDANT!!
+Checking row 171Checking row 172
+172 REDUNDANT!!
+Checking row 173
+173 REDUNDANT!!
+Checking row 174
+174 REDUNDANT!!
+Checking row 175Checking row 176
+176 REDUNDANT!!
+Checking row 177Checking row 178
+178 REDUNDANT!!
+Checking row 179Checking row 180Checking row 181Checking row 182
+182 REDUNDANT!!
+Checking row 183Checking row 184
+184 REDUNDANT!!
+Checking row 185Checking row 186
+186 REDUNDANT!!
+Checking row 187Checking row 188
+188 REDUNDANT!!
+Checking row 189
+189 REDUNDANT!!
+Checking row 190
+190 REDUNDANT!!
+Checking row 191Checking row 192
+192 REDUNDANT!!
+Checking row 193
+193 REDUNDANT!!
+Checking row 194
+194 REDUNDANT!!
+Checking row 195
+195 REDUNDANT!!
+Checking row 196
+196 REDUNDANT!!
+Checking row 197
+197 REDUNDANT!!
+Checking row 198
+198 REDUNDANT!!
+Checking row 199
+199 REDUNDANT!!
+Checking row 200
+200 REDUNDANT!!
+Checking row 201
+201 REDUNDANT!!
+Checking row 202
+202 REDUNDANT!!
+Checking row 203
+203 REDUNDANT!!
+Checking row 204
+204 REDUNDANT!!
+Checking row 205
+205 REDUNDANT!!
+Checking row 206
+206 REDUNDANT!!
+Checking row 207Checking row 208
+208 REDUNDANT!!
+Checking row 209
+209 REDUNDANT!!
+Checking row 210
+210 REDUNDANT!!
+Checking row 211
+211 REDUNDANT!!
+Checking row 212
+212 REDUNDANT!!
+Checking row 213
+213 REDUNDANT!!
+Checking row 214
+214 REDUNDANT!!
+Checking row 215Checking row 216
+216 REDUNDANT!!
+Checking row 217
+217 REDUNDANT!!
+Checking row 218
+218 REDUNDANT!!
+Checking row 219Checking row 220Checking row 221Checking row 222
+222 REDUNDANT!!
+Checking row 223
+223 REDUNDANT!!
+Checking row 224
+224 REDUNDANT!!
+Checking row 225
+225 REDUNDANT!!
+Checking row 226
+226 REDUNDANT!!
+Checking row 227
+227 REDUNDANT!!
+Checking row 228
+228 REDUNDANT!!
+Checking row 229
+229 REDUNDANT!!
+Checking row 230
+230 REDUNDANT!!
+Checking row 231Checking row 232
+232 REDUNDANT!!
+Checking row 233
+233 REDUNDANT!!
+Checking row 234Checking row 235Checking row 236
+236 REDUNDANT!!
+Checking row 237Checking row 238Checking row 239
+239 REDUNDANT!!
+Checking row 240
+240 REDUNDANT!!
+Checking row 241
+241 REDUNDANT!!
+Checking row 242
+242 REDUNDANT!!
+Checking row 243
+243 REDUNDANT!!
+Checking row 244
+244 REDUNDANT!!
+Checking row 245
+245 REDUNDANT!!
+Checking row 246Checking row 247Checking row 248
+248 REDUNDANT!!
+Checking row 249
+249 REDUNDANT!!
+Checking row 250
+250 REDUNDANT!!
+Checking row 251Checking row 252
+252 REDUNDANT!!
+Checking row 253Checking row 254Checking row 255
+255 REDUNDANT!!
+Checking row 256
+5.430000 s.
+Fininding dimension of input...Checking row 7Checking row 8Checking row 9Checking row 18Checking row 24Checking row 27Checking row 29Checking row 32Checking row 43Checking row 48Checking row 51Checking row 53Checking row 62Checking row 68Checking row 74Checking row 75Checking row 76Checking row 77Checking row 79Checking row 80Checking row 82Checking row 84Checking row 86Checking row 87Checking row 89
+4.230000 s.
+Dimension of affine hull of ines/3source3encodercase147ONetCons.ine is 18...
+Performing bounded projection...
+Finding Initial Hull...
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+Done with initial hull
+
+raylist has 7 rays
+
+
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+ an LP was solved
+Done with bounded chm...
+>>stats: Bounded projection has 7 facets 7 vertices...
+chm time = 0.050000 s.
+Writing output file
+Total time required: 9.710000 s.

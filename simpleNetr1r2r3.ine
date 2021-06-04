@@ -1,0 +1,11 @@
+simpleNetr1r2r3
+H-representation
+linearity 1 1
+begin
+5 4 rational
+0  1 -1 -1
+0  1  0  0
+0  0  0  1
+2 -1  0  0
+1  0  1  0
+end

@@ -1,0 +1,14 @@
+2.6.21
+	-Add index-based interface for templates
+	-Add hash and (k-binary and binary and general) heap implementations based on arrays
+	-Add hash and lists based on arrays
+	-Improve error handling in EGnetXXX functions
+	-Add EGaStack_t structures and functions
+	-Add TESTGD
+  -Add basic support for CPLEX
+	-define const strings svn_EGlib string_EGlib and date_EGlib storing the svn version number, version of the library and date of compilation
+2.6.20
+	-Change the continued fraction approximation implementation to NOT depend on GMP internal representation; this change allows to compile with GMP 5.0.x as well as with 4.3.x
+2.6.19
+	-Add basic signal handling into the library, 
+	-Slight change in EGcall(D) behavior,
