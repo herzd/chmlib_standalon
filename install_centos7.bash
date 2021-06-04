@@ -1,24 +1,6 @@
 set -e
 ORIG_BASE_DIR=$PWD
 
-# clean environment from previous builds
-# remove possibly unpacked sources
-printf "removing previously unpacked sources...\n"
-find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d \
--exec rm -rf {} \;
-printf "done.\n"
-
-# unpack sources
-printf "unpacking dependency sources...\n"
-find $ORIG_BASE_DIR/deps/sources -type f \
--exec tar xvf {} --directory $PWD/deps/unpacked \; 
-printf "done.\n"
-
-# remove possibly created install directories
-for DESTDIR in eglib_install gmp_install mpfr_install \
-qsopt_install flint_install bzip2_install zlib_install chm_install; \
-do rm -rf $ORIG_BASE_DIR/deps/installations/$DESTDIR; done
-
 # create installation directories
 for DESTDIR in eglib_install gmp_install mpfr_install \
 qsopt_install flint_install bzip2_install zlib_install; \
@@ -35,7 +17,6 @@ make check
 make install
 printf "gmp compiled, checked and installed.\n"
 cd $ORIG_BASE_DIR
-
 
 printf "entering mpfr source directory.\n"
 cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "mpfr*")
@@ -99,7 +80,7 @@ cd $ORIG_BASE_DIR
 
 # flint installation
 printf "entering flint source directory.\n"
-# hardcoding, as there is flint-2.7.0 for debian-10 in this directory
+# hardcoding, as there is flint-2.7.0 for debian-10 in this repository too
 cd $(find $ORIG_BASE_DIR/deps/unpacked -mindepth 1 -maxdepth 1 -type d -name "flint-2.5.2")
 ./configure --prefix=$ORIG_BASE_DIR/deps/installations/flint_install --with-gmp=$ORIG_BASE_DIR/deps/installations/gmp_install --with-mpfr=$ORIG_BASE_DIR/deps/installations/mpfr_install
 make
