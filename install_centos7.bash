@@ -4,7 +4,7 @@ ORIG_BASE_DIR=$PWD
 # create installation directories
 for DESTDIR in eglib_install gmp_install mpfr_install \
 qsopt_install flint_install bzip2_install zlib_install; \
-do mkdir $ORIG_BASE_DIR/deps/installations/$DESTDIR; done
+do mkdir -p $ORIG_BASE_DIR/deps/installations/$DESTDIR; done
  
 # gmp install
 printf "entering gmp source directory.\n"
