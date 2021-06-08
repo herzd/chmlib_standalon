@@ -1,5 +1,6 @@
 set -e
 ORIG_BASE_DIR=$PWD
+export PATH=/opt/ohpc/pub/utils/autotools/bin:$PATH
 
 # create installation directories
 for DESTDIR in eglib_install gmp_install mpfr_install \
