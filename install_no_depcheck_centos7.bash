@@ -69,11 +69,11 @@ fi
 # bring libraries and headers in place for compile time
 export LD_LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:
 export LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:
-export C_INCLUDE_PATH=$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:
+export C_INCLUDE_PATH=/usr/share/aclocal:$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:
 # configure and compile
 ../configure --prefix=$ORIG_BASE_DIR/deps/installations/qsopt_install/ \
 LDFLAGS="-L$ORIG_BASE_DIR/deps/installations/gmp_install/lib -L$ORIG_BASE_DIR/deps/installations/zlib_install/lib -L$ORIG_BASE_DIR/deps/installations/bzip2_install/lib" \
-CPPFLAGS="-I$ORIG_BASE_DIR/deps/installations/bzip2_install/include -I$ORIG_BASE_DIR/deps/installations/zlib_install/include -I$ORIG_BASE_DIR/deps/installations/gmp_install/include"
+CPPFLAGS="-I/usr/share/aclocal -I$ORIG_BASE_DIR/deps/installations/bzip2_install/include -I$ORIG_BASE_DIR/deps/installations/zlib_install/include -I$ORIG_BASE_DIR/deps/installations/gmp_install/include"
 make clean
 ##make check
 make install
@@ -105,7 +105,7 @@ cd $ORIG_BASE_DIR
 # get libraries and headers ready for compilation time
 export LD_LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/qsopt_install/lib:$ORIG_BASE_DIR/deps/installations/flint_install/lib:$ORIG_BASE_DIR/deps/installations/eglib_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:$ORIG_BASE_DIR/deps/installations/mpfr_install/lib:
 export LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/qsopt_install/lib:$ORIG_BASE_DIR/deps/installations/flint_install/lib:$ORIG_BASE_DIR/deps/installations/eglib_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:$ORIG_BASE_DIR/deps/installations/mpfr_install/lib:
-export C_INCLUDE_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/qsopt_install/include/qsopt_ex:$ORIG_BASE_DIR/deps/installations/flint_install/include/flint:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/mpfr_install/include:
+export C_INCLUDE_PATH=/usr/share/aclocal:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/qsopt_install/include/qsopt_ex:$ORIG_BASE_DIR/deps/installations/flint_install/include/flint:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/mpfr_install/include:
 # place chm source into final destination
 cp -r $ORIG_BASE_DIR/deps/unpacked/chm_pack/chm_install $ORIG_BASE_DIR/deps/installations/
 printf "entering chm source directory.\n"
@@ -117,7 +117,7 @@ cat > $ORIG_BASE_DIR/library_loader << 'EOF'
 ORIG_BASE_DIR=$PWD
 export LD_LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/qsopt_install/lib:$ORIG_BASE_DIR/deps/installations/flint_install/lib:$ORIG_BASE_DIR/deps/installations/eglib_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:$ORIG_BASE_DIR/deps/installations/mpfr_install/lib:
 export LIBRARY_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/lib:$ORIG_BASE_DIR/deps/installations/qsopt_install/lib:$ORIG_BASE_DIR/deps/installations/flint_install/lib:$ORIG_BASE_DIR/deps/installations/eglib_install/lib:$ORIG_BASE_DIR/deps/installations/zlib_install/lib:$ORIG_BASE_DIR/deps/installations/bzip2_install/lib:$ORIG_BASE_DIR/deps/installations/mpfr_install/lib:
-export C_INCLUDE_PATH=$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/qsopt_install/include/qsopt_ex:$ORIG_BASE_DIR/deps/installations/flint_install/include/flint:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/mpfr_install/include:
+export C_INCLUDE_PATH=/usr/share/aclocal:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/gmp_install/include:$ORIG_BASE_DIR/deps/installations/qsopt_install/include/qsopt_ex:$ORIG_BASE_DIR/deps/installations/flint_install/include/flint:$ORIG_BASE_DIR/deps/installations/zlib_install/include:$ORIG_BASE_DIR/deps/installations/bzip2_install/include:$ORIG_BASE_DIR/deps/installations/mpfr_install/include:
 EOF
 
 cat > $ORIG_BASE_DIR/chm.bash << 'EOF'
